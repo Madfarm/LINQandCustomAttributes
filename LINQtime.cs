@@ -2,7 +2,7 @@ namespace Linky;
 
 class LINQexec
 {
-    public IEnumerable<int> firstOne(int[] nums)
+    public IEnumerable<int> evensFilter(int[] nums)
     {
         IEnumerable<int> evensQuery = 
             from num in nums
@@ -10,6 +10,16 @@ class LINQexec
             select num;
 
         return evensQuery;
+    }
+
+    public IEnumerable<int> fourDigitFinder(int[] nums)
+    {
+        IEnumerable<int> fourDigitNums =
+            from num in nums
+            where num > 1000
+            select num;
+
+        return fourDigitNums;
     }
 
     public void print(IEnumerable<int> query)

@@ -29,4 +29,14 @@ class LINQexec
             System.Console.WriteLine(i + " ");
         }
     }
+
+    public IEnumerable<int> getOdds(int[] nums)
+    {
+        IEnumerable<int> odds =
+            from num in nums
+            where num % 2 != 0
+            select num;
+
+        return odds;
+    }
 }

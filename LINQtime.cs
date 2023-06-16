@@ -39,4 +39,9 @@ class LINQexec
 
         return odds;
     }
+
+    public Boolean doesInclude(int target, int[]nums)
+    {
+       return nums.Contains(target);
+    }
 }

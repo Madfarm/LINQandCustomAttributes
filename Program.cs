@@ -6,7 +6,8 @@ LINQexec caller = new LINQexec();
 
 IEnumerable<int> evens = caller.evensFilter(numArr);
 IEnumerable<int> fourDigits = caller.fourDigitFinder(numArr);
-IEnumerable<int> odds = caller.getOdds(numArr);
+// IEnumerable<int> odds = caller.getOdds(numArr);
+IEnumerable<int> odds = caller.getOddsButSpicy(numArr);
 
 caller.print(odds);
 

@@ -9,3 +9,15 @@ In Visual Studio, LINQ provides intellisense against the SQL server you're fetch
 
 a query is not executed until the query variable is iterated over
 
+
+two syntaxes(so far):
+
+IEnumerable<int> odds =
+            from num in nums
+            where num % 2 != 0
+            select num;
+
+ IEnumerable<int> odds = nums.Where(num => num % 2 != 0);
+
+
+ both should grab all odd numbers and then store them in a collection called odds

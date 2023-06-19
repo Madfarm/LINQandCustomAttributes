@@ -43,6 +43,13 @@ class LINQexec
         return odds;
     }
 
+    public IEnumerable<int> getOddsButSpicy(int[] nums)
+    {
+        IEnumerable<int> odds = nums.Where(num => num % 2 != 0);
+
+        return odds;
+    }
+
     public Boolean doesInclude(int target, int[]nums)
     {
        return nums.Contains(target);
